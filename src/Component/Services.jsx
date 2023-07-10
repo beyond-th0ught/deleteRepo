@@ -1,6 +1,9 @@
 import React from 'react'
 import {Carousel} from 'react-responsive-carousel'
-import Services1 from '../assetes/truck1.png'
+import Services1 from '../assetes/web_devloper.png'
+import Services2 from '../assetes/amazon.png'
+import Services3 from '../assetes/mongodb.png'
+import Services4 from '../assetes/blockchain.png'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const Services = () => {
@@ -12,24 +15,25 @@ const Services = () => {
         autoPlay
         showStatus={false}
         showArrows={false}
-        interval={1000}
+        interval={2000}
         showThumbs={false}
+        
         >
             <div>
-                <img src={Services1} alt="" />
+                <img style={{width:"50%"}} src={Services1} alt="" />
                 <p className='legend'>Full Stack</p>
             </div>
             <div>
-                <img src={Services1} alt="" />
-                <p className='legend'>Full Stack</p>
+                <img style={{width:"50%"}} src={Services2} alt="" />
+                <p className='legend'>Amazon</p>
             </div>
             <div>
-                <img src={Services1} alt="" />
-                <p className='legend'>Full Stack</p>
+                <img style={{width:"50%"}} src={Services3} alt="" />
+                <p className='legend'>Database</p>
             </div>
             <div>
-                <img src={Services1} alt="" />
-                <p className='legend'>Full Stack</p>
+                <img style={{width:"50%"}} src={Services4} alt="" />
+                <p className='legend'>BlockChain Developer</p>
             </div>
             
         </Carousel>

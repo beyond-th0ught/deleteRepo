@@ -61,9 +61,12 @@
     justify-content: center;
     margin-top: -200px;
     > img{
-        width: 30%;
+        width: 220px;
+        height: 500px;
+        border-radius: 50%;
         animation: imgUp 0.7s linear infinite alternate;
     }
+    
     > div{
         width: 50%;
         display: flex;
@@ -80,8 +83,10 @@
             font: 100 1.2rem $text2;
         }
     }
+    
 
 }
+
 
 .home3{
     width: 100%;
@@ -100,14 +105,25 @@
         justify-content: center;
         padding: 2rem;
 
-        > h1{
+        > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > img{
+                width: 30px;
+                height: 60px;
+                border-radius: 100%;
+                border: 5px black solid;
+            }
+            
+            > h1{
             text-transform: uppercase;
             border-radius: 2px solid $dark;
             padding: 0.5rem;
             width: 15rem;
             color: $dark;
 
-        }
+        }}
 
         > p{
             padding: 5rem;
@@ -166,7 +182,8 @@
                 animation: imgUp 0.7s linear infinite alternate;
                 transition: all 0.5s;
                 &:hover{
-                    filter: invert(1);
+                    width: 40%;
+                    height: 60%;
                 }
                 svg{
                     font-size: 4rem;
